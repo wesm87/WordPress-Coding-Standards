@@ -1,20 +1,22 @@
 <?php
 
-new WP_Query( array(
-	'meta_query' => array(
-		array(
-			'key' => 'foo',
-			'value' => 'bar',
+new WP_Query(
+	array(
+		'meta_query' => array(
+			array(
+				'key' => 'foo',
+				'value' => 'bar',
 			),
 		),
-	'tax_query' => array(
-		array(
-			'taxonomy' => 'foo',
+		'tax_query' => array(
+			array(
+				'taxonomy' => 'foo',
 			),
 		),
-	'meta_key' => 'foo',
-	'meta_value' => 'bar',
-	) );
+		'meta_key' => 'foo',
+		'meta_value' => 'bar',
+	)
+);
 
 $query = 'foo=bar&meta_key=foo&meta_value=bar';
 
@@ -34,7 +36,6 @@ $test = array(
 	'tax_query' => array( // WPCS: tax_query ok.
 		array(
 			'taxonomy' => 'foo',
-			),
 		),
 	),
 );
