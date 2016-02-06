@@ -37,12 +37,12 @@ class WordPress_Tests_VIP_SlowDBQueryUnitTest extends AbstractSniffUnitTest
     public function getWarningList()
     {
         return array(
-            4  => 1,
-            10 => 1,
-            15 => 1,
+            5  => 1,
+            11 => 1,
             16 => 1,
-            19 => 2,
-            30 => 1,
+            17 => 1,
+            21 => 2,
+            32 => 1,
             );
 
     }//end getWarningList()
